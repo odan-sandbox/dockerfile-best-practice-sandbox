@@ -1,1 +1,1 @@
-FROM python:3.4-alpine
+FROM node:16-slim
