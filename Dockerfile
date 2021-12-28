@@ -1,1 +1,1 @@
-FROM node:16-slim
+FROM node:17-stretch-slim
