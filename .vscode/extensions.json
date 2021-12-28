@@ -1,0 +1,6 @@
+{
+    "recommendations": [
+        "exiasr.hadolint",
+        "aquasecurityofficial.trivy-vulnerability-scanner"
+    ]
+}
