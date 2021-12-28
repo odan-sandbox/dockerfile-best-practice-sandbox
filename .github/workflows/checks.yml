@@ -16,3 +16,14 @@ jobs:
       - uses: actions/checkout@v2
 
       - uses: hadolint/hadolint-action@v1.6.0
+
+      - name: Build an image from Dockerfile
+        run: |
+          docker build -t dockerfile-best-practice-sandbox .
+
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@v0.2.0
+        with:
+          image-ref: dockerfile-best-practice-sandbox
+          format: 'table'
+          exit-code: '1'
